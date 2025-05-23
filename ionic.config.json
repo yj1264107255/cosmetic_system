@@ -1,0 +1,7 @@
+{
+  "name": "护肤品成分查询系统",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue"
+} 

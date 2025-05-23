@@ -1,0 +1,21 @@
+# 设置默认行为，对所有文件处理文本和标准行尾标准化
+* text=auto
+
+# 对特定文件类型明确标明是文本文件
+*.java text
+*.xml text
+*.vue text
+*.js text
+*.md text
+*.json text
+*.css text
+*.html text
+*.properties text
+*.gradle text
+
+# 对二进制文件明确标明是二进制，不进行行尾转换
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary

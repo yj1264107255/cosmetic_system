@@ -1,0 +1,29 @@
+{
+  "name": "护肤品成分查询系统",
+  "builds": {
+    "android": {
+      "appBuildConfig": {
+        "gradleArgs": [
+          "-PcdvVersionCode=1",
+          "-PcdvMinSdkVersion=22",
+          "-PcdvVersionCode=10000"
+        ]
+      }
+    },
+    "ios": {
+      "appBuildConfig": {
+        "developmentTeam": ""
+      }
+    }
+  },
+  "environments": {
+    "production": {
+      "CAPACITOR_SERVER_URL": "",
+      "API_URL": ""
+    },
+    "development": {
+      "CAPACITOR_SERVER_URL": "",
+      "API_URL": "http://localhost:8080"
+    }
+  }
+} 
