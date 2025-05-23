@@ -1,29 +1,37 @@
 {
-  "name": "护肤品成分查询系统",
-  "builds": {
-    "android": {
-      "appBuildConfig": {
-        "gradleArgs": [
-          "-PcdvVersionCode=1",
-          "-PcdvMinSdkVersion=22",
-          "-PcdvVersionCode=10000"
-        ]
-      }
-    },
-    "ios": {
-      "appBuildConfig": {
-        "developmentTeam": ""
+  "apps": [
+    {
+      "appId": "com.example.cosmetic",
+      "rootDir": ".",
+      "webDir": "dist",
+      "name": "护肤品成分查询系统",
+      "android": {
+        "appBuildConfig": {
+          "gradleArgs": [
+            "-PcdvVersionCode=1",
+            "-PcdvMinSdkVersion=22"
+          ]
+        }
+      },
+      "ios": {
+        "appBuildConfig": {
+          "developmentTeam": ""
+        }
+      },
+      "environments": {
+        "production": {
+          "variables": {
+            "CAPACITOR_SERVER_URL": "",
+            "API_URL": ""
+          }
+        },
+        "development": {
+          "variables": {
+            "CAPACITOR_SERVER_URL": "",
+            "API_URL": "http://localhost:8080"
+          }
+        }
       }
     }
-  },
-  "environments": {
-    "production": {
-      "CAPACITOR_SERVER_URL": "",
-      "API_URL": ""
-    },
-    "development": {
-      "CAPACITOR_SERVER_URL": "",
-      "API_URL": "http://localhost:8080"
-    }
-  }
+  ]
 } 
