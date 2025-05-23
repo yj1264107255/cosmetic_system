@@ -1,7 +1,7 @@
 {
   "apps": [
     {
-      "appId": "com.example.cosmetic",
+      "appId": "f3f882f1",
       "rootDir": ".",
       "webDir": "dist",
       "name": "护肤品成分查询系统",
